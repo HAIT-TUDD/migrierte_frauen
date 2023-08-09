@@ -1,0 +1,421 @@
+* {
+  padding: 0;
+  max-width: 100%;
+}
+
+
+.keeptogether {
+  white-space: nowrap;          /* Zeilenumbrüche vermeinden*/
+}
+
+
+#nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  background-color: #ffff;
+  padding: 0 !important;
+}
+
+.navbar-nav>li {
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}
+
+.navbar-nav>li a {
+  color: #025930 !important;
+  font-weight: 500;
+}
+.navbar-nav>li a:active{
+  background-color: #F0F0F2;
+}
+.navbar-toggler{
+  margin-bottom: 0.1em;
+}
+
+/*--------------------HEADER SECTION----------------------------*/
+.banner {
+  height: 100vh;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #025930;
+  text-align: center;
+
+}
+
+.main .banner {
+  background-image: url("images/header.png");   /*Titelbild*/
+}
+
+.banner h1 {
+  padding-top: 15%;
+  letter-spacing: 4px;
+  font-weight: 400;
+  margin: 0 auto 0;
+  overflow-wrap: break-word;
+  width: 70%;
+}
+
+.banner h2 {
+  padding-top: 10%;
+  letter-spacing: 4px;
+  font-weight: 400;
+  overflow-wrap: break-word;
+  margin: auto auto;
+}
+
+.banner h5 {
+  margin: auto auto;
+  overflow-wrap: break-word;
+}
+
+.banner h6 {
+  margin-top: 0.4em;
+}
+
+.banner-parent {
+  position: relative;
+}
+
+
+.banner-bildquelle {   /*Box am rechten oberen Rand zur Angabe der Bildquelle*/
+  background-color: rgb(0 0 0 /0.6);
+  color: #ffffff;
+  text-align: start;
+  font-size: x-small;
+  padding: 0.1em 0.1em 0 0.5em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 0;
+  width: 20%;
+  overflow-wrap: break-word;
+}
+
+.banner-btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner .btn {          /*Buttons "Home", "Instutituonen", "Über Uns"*/
+  border-color: #025930;
+  color: #025930;
+  border-width: 0.15em;
+  font-weight: 500;
+}
+
+.banner .btn:hover {
+  border-color:#025930;
+  color: #ffff;
+  background-color: #025930;
+}
+
+.banner-btn .d-none {
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+
+.banner-btn .d-inline-block {
+  margin: 0 auto;
+}
+
+/*--------TEXT-----------*/
+
+.dummy::before {  /*Dummy für bessere Position beim Verlinken der Fußnoten*/
+  content: "";
+  display: block;
+  height: 4em;
+  margin-top: -4em;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.titel1 {             /*Überschriften im Text*/
+  color: #025930;
+  text-align: center;
+  margin: 1.8em 0;
+}
+
+.titel1::before {      /*Designelement über der Überschrift*/
+  content: '';
+  background-color: #025930;
+  height: 5px;
+  width: 20vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  display: block;
+}
+
+.text1 {
+  text-align: justify;
+  text-justify: inter-word;
+
+}
+
+.VA{
+  text-align: start;
+}
+
+.text1 a {
+  text-decoration: none;
+  color: #9E3336;
+}
+.text1 a:hover {
+  color: #000000 !important;
+}
+
+.text1 i {
+  display: inline;
+}
+
+.list1 a {
+  text-decoration: none;
+  color: #9E3336;
+}
+
+.list1 a:hover {
+  color: #000000;
+}
+
+.list1 i {
+  display: inline;
+}
+
+
+/*----FOOTNOTES----*/
+
+.footnotes {
+  font-size: 13px;
+  padding-left: 0.5em;
+}
+
+.footnotes a {
+  text-decoration: none;
+  color: #9E3336;
+
+}
+.footnotes a:hover {
+  color: #000000 !important;
+}
+.footnotes::before {   /*Dummy für bessere Position beim Verlinken der Fußnoten*/
+  content: "";
+  display: block;
+  height: 4em;
+  margin-top: -4em;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/*-----KACHELN-----*/
+
+.card-parent{
+  justify-content: center;
+}
+
+.card {                                    /*Kachel*/
+  border-color: #D9BBB4 !important;
+  border-width: thin !important;
+  max-width: 390px;
+}
+
+.card img {                                /*Kachelbild*/
+  height: 390px;
+}
+
+.card-body {
+  justify-content: end;
+}
+.bildquelle {                             /*Bildquelle für Kachelbild*/
+  background-color: rgb(0 0 0 /0.7) !important;
+  margin-top: -0.1em;
+  color: #ffffff;
+  text-align: start;
+  font-size: small;
+  padding-left: 0.5em;
+}
+
+.tile1 {
+  font-size: 1.3em;
+  margin: auto 0;
+  text-align: center;
+}
+
+
+.tile1 a {                            /*Anpassen der Verlinkungen*/
+  text-decoration: none;
+  color: #000000;
+}
+
+.author {                      /*Autor:innen-Name in der Kachel*/
+  color: #9E3336;
+  letter-spacing: 1px;
+  padding-bottom: 0.5em;
+  margin: 1em auto 0;
+}
+
+
+.card .btn {                              /*Button "mehr"*/
+  border-color: #9E3336;
+  color: #9E3336;
+  margin: 0 auto;
+}
+
+.card .btn:hover {
+  color: #fff !important;
+  border-color: #9E3336 !important;
+  background-color: #9E3336 !important;
+}
+
+
+
+
+/*-----INSTITUTIONEN---*/
+.logo-parent{
+  justify-content: center;
+  align-items: center;
+
+}
+
+.img-logo {
+  max-height: 150px;
+  margin: auto 0;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+}
+
+/*-------------TEILPROJEKTE-----------*/
+.tp-banner {
+  background-color: #F0F0F2;
+  height: 550px !important;
+}
+
+.tp-banner-bildquelle {   /*Box am rechten oberen Rand zur Angabe der Bildquelle*/
+  background-color: rgb(0 0 0 /0.6);
+  color: #ffffff;
+  text-align: start;
+  font-size: x-small;
+  padding: 0.1em 0.1em 0 0.5em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 0;
+  width: 9.75%;
+  overflow-wrap: break-word;
+}
+
+.tp-kurz {                          /*Anpassung für Projekte mit kurzem Titel*/
+  padding-top: 10% !important;
+}
+
+.tp-titel {             /*Überschriften im Text*/
+  margin: 0 0 0.8em 0;
+}
+
+.tp-titel1::before {      /*Designelement über der Überschrift*/
+  content: '';
+  background-color: #025930;
+  height: 5px;
+  width: 20vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  display: block;
+}
+.profil {                           /*Autor:innen-Karte*/
+  margin-bottom: 3em;
+  justify-content: center;
+}
+
+.profil .card {
+  margin-top: -12%;
+  margin-bottom: 2em;
+  max-width: 60em;
+  border-radius: 15px;
+  padding: 0.5em;
+}
+
+.profil .name {
+  letter-spacing: 5px;
+  font-style: italic;
+  color: #9E3336;
+  margin-bottom: 0.5em;
+}
+
+.profil .content{
+  margin-top: 0.5em;
+  justify-content: start;
+  align-items: center;
+}
+
+.content span {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.semi {                           /*Zwischenüberschriften für TP7 (bzw. bei Veranstaltungen)*/
+  color: #025930;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+
+/*-------------VERANSTALTUNGEN (DATENSCHUTZ, IMPRESSUM)-----------*/
+.ue-banner {             /*Banenr für "Veranstaltungen", "Datenschutz", "Impressum"*/
+  background-color: #F0F0F2;
+  height: 380px !important;
+}
+
+.date {
+  color: #000;
+  text-align: start;
+  font-style: italic;
+  margin-bottom: -0.5em;
+}
+
+.news {
+  width: 80%;
+}
+
+.later::before {
+  content: '';
+  background-color: #025930;
+  height: 2px;
+  width: 20vw;
+  margin: 3em auto 3em;
+  display: block;
+}
+
+
+/*-----FOOTER-----*/
+footer {
+  padding-bottom: 1em;
+  padding-top: 1em;
+  margin-top: 3em;
+  background-color: #F0F0F2;
+  color: #000;
+}
+
+.footer-nav{
+  justify-content: center;
+}
+footer a {
+  color: #000;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #9E3336;
+}
+
+.list-unstyled {
+  list-style: none;
+}
