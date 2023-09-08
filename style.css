@@ -74,6 +74,11 @@
   overflow-wrap: break-word;
 }
 
+.banner a{
+  text-decoration: none;
+  color: #025930;
+}
+
 .banner h6 {
   margin-top: 0.4em;
 }
@@ -357,6 +362,12 @@
   align-items: center;
 }
 
+.orcid{                   /*von Orcid vorgegeben: nicht kleiner als 16x16*/
+  width: 16px;
+  height: 16px !important;
+  margin-bottom: 0.2em;
+}
+
 .content span {
   margin-left: 0.5em;
   margin-right: 0.5em;
@@ -366,6 +377,12 @@
   color: #025930;
   margin-bottom: 1em;
   margin-top: 1em;
+}
+
+
+.tp9-bild {
+  max-height: 500px;
+  min-height: 200px;
 }
 
 
