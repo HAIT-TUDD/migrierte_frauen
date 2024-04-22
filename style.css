@@ -9,6 +9,14 @@
 }
 
 
+.navbar .dropdown-menu {
+  min-width: max-content;
+}
+
+.dropdown-item {
+  font-size: small;
+}
+
 #nav-bar {
   position: sticky;
   top: 0;
@@ -190,6 +198,10 @@
 
 .list1 i {
   display: inline;
+}
+
+.dropdown-menu.show {
+  width: 300;
 }
 
 
